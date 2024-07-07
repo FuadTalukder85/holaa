@@ -1,0 +1,32 @@
+.logo {
+  width: 170px;
+  height: 45px;
+}
+.btn-subscribe {
+  background: linear-gradient(
+    to left,
+    rgba(255, 88, 28, 1),
+    rgba(255, 41, 184, 1),
+    rgba(90, 13, 255, 1)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50px;
+  text-transform: uppercase;
+  width: 170px;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+.users {
+  width: 60px;
+  height: 60px;
+  color: white;
+  font-size: 18px;
+  border: 2px solid #989797;
+}

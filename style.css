@@ -1,0 +1,19 @@
+h1,
+h2,
+h3,
+button {
+  font-family: "Big Shoulders Display", sans-serif;
+}
+h4,
+h5,
+h5,
+p,
+span {
+  font-family: "Jost", sans-serif;
+}
+* {
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
