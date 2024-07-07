@@ -17,3 +17,17 @@ span {
 .no-padding {
   padding: 0;
 }
+.btn-outline {
+  color: white;
+  border: 1px solid rgb(255, 102, 0);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 500px;
+  text-transform: uppercase;
+  width: 170px;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 700;
+  background: #0c0906;
+  background-clip: padding-box;
+}
