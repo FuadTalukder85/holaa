@@ -7,14 +7,14 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
     />
     <link rel="stylesheet" href="components/sidebar/sidebar.css" />
     <!-- Bootstrap cdn -->
@@ -28,17 +28,19 @@
     <link rel="stylesheet" href="components/navBar/navbar.css" />
     <link rel="stylesheet" href="components/hero/hero.css" />
     <link rel="stylesheet" href="components/mediaCard/mediaCard.css" />
+    <link rel="stylesheet" href="components/newRelease/newRelease.css" />
     <!-- Main css file -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container-fluid bg-black">
+    <div class="container-fluid bg-black main-container">
       <div class="row">
         <div class="col-md-12 no-padding">
           <div class="main-width">
             <div id="navbar"></div>
             <div id="hero"></div>
             <div id="mediaCard"></div>
+            <div id="newRelease"></div>
           </div>
         </div>
       </div>
@@ -51,6 +53,11 @@
           .then((response) => response.text())
           .then((data) => {
             document.getElementById(id).innerHTML = data;
+            if (id === "newRelease") {
+              const script = document.createElement("script");
+              script.src = "/scripts/newrelease.js";
+              document.body.appendChild(script);
+            }
           })
           .catch((error) => console.error(`Error loading ${id}:`, error));
       }
@@ -59,6 +66,7 @@
         loadComponent("navbar", "/components/navBar/navbar.html");
         loadComponent("hero", "/components/hero/hero.html");
         loadComponent("mediaCard", "/components/mediaCard/mediaCard.html");
+        loadComponent("newRelease", "/components/newRelease/newRelease.html");
       };
     </script>
     <!-- Bootstrap js file -->
