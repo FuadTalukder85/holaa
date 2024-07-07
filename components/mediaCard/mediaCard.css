@@ -1,0 +1,37 @@
+.media-card-width {
+  background-color: #191919;
+  margin-top: -45px;
+  padding-bottom: 25px;
+  border-radius: 50px;
+}
+.media-card-content {
+  padding: 0 100px;
+  margin-top: -50px;
+}
+.media-card {
+  font-family: "Big Shoulders Display", sans-serif;
+}
+.media-details {
+  margin-top: -10px;
+}
+.media-card h3 {
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 15px;
+}
+.media-card p {
+  color: #999999;
+  text-align: center;
+}
+.btn-media-card {
+  color: #999999;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 50px;
+}
+.btn-media-card .fa-star {
+  color: #d27304;
+}
