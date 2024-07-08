@@ -72,10 +72,79 @@
   border-radius: 50px;
   margin-top: 55px;
 }
+.icon-after {
+  position: relative;
+}
 .icons {
   width: 60px;
   height: 60px;
   color: white;
   font-size: 18px;
-  border: 2px solid #989797;
+  border: 2px solid #3d3b3b;
+  background: #353434;
+}
+.icons-hover {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 160px;
+  height: 65px;
+  padding: 0 20px;
+  color: white;
+  background: #282828;
+  font-size: 18px;
+  border-radius: 60px;
+  opacity: 0;
+  transition-duration: 1s;
+  z-index: 10;
+}
+
+.hover-text {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.icons-hover:hover {
+  opacity: 1;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+.icons-hover:hover::before {
+  content: "";
+  position: absolute;
+  right: -3px;
+  top: -3px;
+  width: 167px;
+  height: 66px;
+  padding: 0 20px;
+  color: white;
+  font-size: 18px;
+  border-radius: 60px;
+  opacity: 1;
+  z-index: -1;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 88, 28, 1),
+    rgba(255, 41, 184, 1),
+    rgba(90, 13, 255, 1)
+  );
+  transition-duration: 1s;
+}
+
+.icons-hover:hover::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 160px;
+  height: 60px;
+  padding: 0 20px;
+  color: white;
+  font-size: 18px;
+  border-radius: 60px;
+  opacity: 1;
+  transition-duration: 1s;
+  background: #282828;
+  z-index: -1;
 }

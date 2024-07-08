@@ -25,7 +25,7 @@
 }
 .new-release-card:hover .new-release-content {
   opacity: 1;
-  transform: scale(1.2); /* Ensure this matches the hover state */
+  transform: scale(1.2);
 }
 .new-release-content {
   position: absolute;
@@ -59,7 +59,7 @@
 .new-release-content h3 {
   color: white;
   font-size: 35px;
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 .btn-play {
   width: 70px;

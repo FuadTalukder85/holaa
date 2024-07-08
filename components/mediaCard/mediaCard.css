@@ -11,6 +11,13 @@
 .media-card {
   font-family: "Big Shoulders Display", sans-serif;
 }
+.media-card img {
+  transition: transform 0.5s ease-in-out;
+}
+.media-card img:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease-in-out;
+}
 .media-details {
   margin-top: -10px;
 }
@@ -20,6 +27,12 @@
   font-weight: 600;
   text-align: center;
   margin-top: 15px;
+  transition: transform 0.5s ease-in-out;
+}
+.media-card h3:hover {
+  color: #fccc95;
+  transform: scale(1.05);
+  transition: transform 0.5s ease-in-out;
 }
 .media-card p {
   color: #999999;

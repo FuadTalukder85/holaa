@@ -22,6 +22,18 @@
   padding: 15px 0;
   font-size: 18px;
   font-weight: 700;
+  transition-duration: 1s;
+}
+.btn-subscribe:hover {
+  color: #ffdede;
+  background: linear-gradient(
+    to left,
+    rgba(90, 13, 255, 1),
+    rgba(255, 41, 184, 1),
+    rgba(255, 88, 28, 1)
+  );
+  transform: scale(1.1);
+  transition-duration: 1s;
 }
 .users {
   width: 60px;
@@ -29,4 +41,15 @@
   color: white;
   font-size: 18px;
   border: 2px solid #989797;
+  transition-duration: 1s;
+}
+.users:hover {
+  background: linear-gradient(
+    to left,
+    rgba(90, 13, 255, 1),
+    rgba(255, 41, 184, 1),
+    rgba(255, 88, 28, 1)
+  );
+  transform: scale(1.1);
+  transition-duration: 1s;
 }
