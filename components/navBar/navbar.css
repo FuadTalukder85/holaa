@@ -26,12 +26,7 @@
 }
 .btn-subscribe:hover {
   color: #ffdede;
-  background: linear-gradient(
-    to left,
-    rgba(90, 13, 255, 1),
-    rgba(255, 41, 184, 1),
-    rgba(255, 88, 28, 1)
-  );
+  border: 1px solid rgb(255, 102, 0);
   transform: scale(1.1);
   transition-duration: 1s;
 }
@@ -44,12 +39,11 @@
   transition-duration: 1s;
 }
 .users:hover {
-  background: linear-gradient(
-    to left,
-    rgba(90, 13, 255, 1),
-    rgba(255, 41, 184, 1),
+  background: radial-gradient(
+    /* rgba(90, 13, 255, 1), */ rgba(255, 41, 184, 1),
     rgba(255, 88, 28, 1)
   );
   transform: scale(1.1);
   transition-duration: 1s;
+  border: none;
 }
