@@ -1,3 +1,9 @@
+.new-release-title {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 .new-release {
   color: white;
   padding: 0 70px;
@@ -17,28 +23,66 @@
 .new-release-card {
   position: relative;
 }
-.new-release-card img {
-  transition: transform 0.5s ease-in-out;
-}
-.new-release-card img:hover {
-  transform: scale(1.2);
-  transition: transform 0.5s ease-in-out;
+.new-release-card:hover .new-release-content {
+  opacity: 1;
+  transform: scale(1.2); /* Ensure this matches the hover state */
 }
 .new-release-content {
   position: absolute;
-  bottom: 15px;
-  left: 15px;
+  bottom: 0;
+  left: 0;
   opacity: 0;
-}
-.new-release-card:hover .new-release-content {
-  opacity: 1;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
+.new-release-content:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+}
+.new-release-card:hover .hv-img {
+  transform: scale(1.1);
+}
+
+.new-release-hover {
+  position: relative;
+}
+.release-hidden-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+}
 .new-release-content h3 {
   color: white;
   font-size: 35px;
   margin-top: 15px;
 }
+.btn-play {
+  width: 70px;
+  height: 70px;
+  color: white;
+  font-size: 18px;
+  background: radial-gradient(#989797, #98979733);
+  margin-top: 75px;
+}
+/*  */
+.release-icons-content {
+  width: 90px;
+  border-radius: 50px;
+  margin-top: 55px;
+}
+.release-icons {
+  width: 40px;
+  height: 40px;
+  color: white;
+  font-size: 18px;
+  border: 2px solid #989797;
+}
+
 .action {
   color: #999999;
 }

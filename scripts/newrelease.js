@@ -6,14 +6,15 @@ scrollContainer.addEventListener("wheel", (evt) => {
   evt.preventDefault();
   scrollContainer.scrollLeft += evt.deltaY;
   scrollContainer.style.scrollBehavior = "auto";
+  scrollContainer.scrollLeft += 300;
 });
 
 nextBtn.addEventListener("click", () => {
   scrollContainer.style.scrollBehavior = "smooth";
-  scrollContainer.scrollLeft += 475;
+  scrollContainer.scrollLeft += 300;
 });
 
 backBtn.addEventListener("click", () => {
   scrollContainer.style.scrollBehavior = "smooth";
-  scrollContainer.scrollLeft -= 475;
+  scrollContainer.scrollLeft -= 300;
 });
